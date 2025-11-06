@@ -93,7 +93,7 @@ export const Navbar = () => {
           ))}
         </ul>
         <a href="#contact" className='block'>
-          <button className="w-full bg-[#2776d3] hover:bg-yellow-400 text-white hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+          <button className="mt-4 w-full bg-[#2776d3] hover:bg-yellow-400 text-white hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
             Contact Now
           </button>
 
