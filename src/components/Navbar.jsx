@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo2 from '../assets/logo2.png';
+
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ export const Navbar = () => {
     >
       {/* Logo */}
       <img
-        src={logo2}
+        src="/logo2.webp"
         loading="lazy"
         alt="Lifetime Fitness"
         className="w-20 md:w-24 lg:w-24  cursor-pointer transition-all duration-300"

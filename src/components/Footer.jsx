@@ -1,5 +1,5 @@
 import React from 'react'
-import logo3 from '../assets/logo3.png'
+
 import { Instagram, Facebook, Twitter, MapPin, Phone, Mail, Clock, Dumbbell } from 'lucide-react';
 export const Footer = () => {
     return (
@@ -23,7 +23,7 @@ export const Footer = () => {
                         <div className="lg:col-span-2">
                             <div className="flex items-center gap-0 mb-6">
                                 <div className="  p-3 rounded-xl">
-                                    <img src={logo3} alt="" className='w-20 md:w-24 lg:w-24  cursor-pointer transition-all duration-300' />
+                                    <img src="/logo3.webp" alt="" className='w-20 md:w-24 lg:w-24  cursor-pointer transition-all duration-300' />
                                 </div>
                                 <h2 className="text-3xl font-black text-white">
                                     LIFETIME <span className="text-yellow-400">FITNESS</span>
