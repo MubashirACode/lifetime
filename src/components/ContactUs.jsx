@@ -18,24 +18,33 @@ export const ContactUs = () => {
   };
 
 const contactInfo = [
-  {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-        <circle cx="12" cy="10" r="3"></circle>
-      </svg>
-    ),
-    title: "Location",
-    content: (
-      <>
+ {
+  icon: (
+    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+      <circle cx="12" cy="10" r="3"></circle>
+    </svg>
+  ),
+  title: "Location",
+  content: (
+    <a
+      href="https://maps.app.goo.gl/jFsyt51d9CCFrj1U7"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block cursor-pointer hover:text-[#2776d3] transition-colors group"
+    >
+      <span className="block leading-tight">
         Plot 2 64, Jamia Hammadia Masjid Big #2,<br />
         2 Shah Faisal Ave, near Hammadia Masjid,<br />
         Block 2 Shah Faisal Colony 2,<br />
-        Shah Faisal Town, Karachi 75230<br />
-        <span className="text-xs font-medium text-black">V5H2+VG Shah Faisal Town</span>
-      </>
-    )
-  },
+        Shah Faisal Town, Karachi 75230
+      </span>
+      <span className="block text-xs font-medium text-[#2776d3] mt-1 group-hover:underline">
+        V5H2+VG Shah Faisal Town
+      </span>
+    </a>
+  )
+},
   {
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

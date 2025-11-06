@@ -100,15 +100,24 @@ export const Footer = () => {
                                     <div className="bg-white/10 backdrop-blur-sm p-2 rounded-lg mt-0.5">
                                         <MapPin className="w-4 h-4 text-yellow-400" />
                                     </div>
-                                    <div>
-                                        <p className="text-white/90 leading-relaxed">
+
+                                    {/* CLICKABLE LOCATION */}
+                                    <a
+                                        href="https://maps.app.goo.gl/jFsyt51d9CCFrj1U7"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group cursor-pointer inline-block"
+                                    >
+                                        <p className="text-white/90 leading-relaxed hover:text-yellow-300 transition-colors">
                                             Plot 2 64, Jamia Hammadia Masjid Big #2,<br />
                                             2 Shah Faisal Ave, near Hammadia Masjid,<br />
                                             Block 2 Shah Faisal Colony 2,<br />
                                             Shah Faisal Town, Karachi 75230<br />
-                                            <span className="text-yellow-300 text-xs">V5H2+VG Shah Faisal Town</span>
+                                            <span className="text-yellow-300 text-xs font-bold group-hover:underline">
+                                                V5H2+VG Shah Faisal Town
+                                            </span>
                                         </p>
-                                    </div>
+                                    </a>
                                 </div>
 
                                 {/* Phone */}
