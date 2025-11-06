@@ -150,6 +150,11 @@ export const Footer = () => {
                                         <p className="leading-tight">Morning: <strong>6:00 AM - 11:00 AM</strong></p>
                                         <p className="leading-tight">Evening: <strong>4:00 PM - 12:00 AM</strong></p>
                                     </div>
+                                    <div className="text-white/90">
+                                        <p className="font-semibold mb-1 text-yellow-300">Girls Timings:</p>
+                                        <p className="leading-tight">Morning: <strong>10.00 AM - 10.00 PM</strong></p>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>

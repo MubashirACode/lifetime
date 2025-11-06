@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Award, Target } from 'lucide-react';
-import trainer1 from '../assets/trainer1.png';
-import trainer2 from '../assets/trainer2.png';
-import trainer3 from '../assets/trainer3.png';
-import trainer4 from '../assets/trainer4.png';
-import trainer5 from '../assets/trainer5.png';
-import trainer6 from '../assets/trainer6.png';
+import trainer1 from '../assets/trainer1.webp';
+import trainer2 from '../assets/trainer2.webp';
+import trainer3 from '../assets/trainer3.webp';
+import trainer4 from '../assets/trainer4.webp';
+import trainer5 from '../assets/trainer5.webp';
+import trainer6 from '../assets/trainer6.webp';
 
 const trainers = [
   {

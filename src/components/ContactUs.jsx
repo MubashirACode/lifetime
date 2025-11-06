@@ -85,6 +85,10 @@ const contactInfo = [
         <span className="font-semibold text-black ">Boys Timings:</span><br />
         Morning: <strong>6:00 AM - 11:00 AM</strong><br />
         Evening: <strong>4:00 PM - 12:00 AM</strong>
+        <br />
+        <span className="font-semibold text-black ">Girls Timings:</span><br />
+        Morning: <strong>10:00 AM - 10:00 AM</strong><br />
+       
       </>
     )
   }
