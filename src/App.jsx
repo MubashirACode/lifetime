@@ -7,6 +7,7 @@ import { Hero } from './components/Hero'
 import { Navbar } from './components/Navbar'
 import Pricing from './components/Pricing'
 import Trainer from './components/Trainer'
+import WhatsAppButton from './components/WhatsAppButton'
 
 
 
@@ -15,13 +16,18 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <AboutUs />
-      <Trainer />
-      <Pricing />
-      <ContactUs />
-      <Footer />
+      <div className="h-screen">
+        <Navbar />
+        <Hero />
+        <AboutUs />
+        <Trainer />
+        <Pricing />
+        <ContactUs />
+        <Footer />
+
+
+        <WhatsAppButton />
+      </div>
     </>
   )
 }
