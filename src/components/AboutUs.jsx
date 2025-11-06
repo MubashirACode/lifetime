@@ -1,5 +1,5 @@
 import React from 'react';
-import visit from "../assets/visit.webp"
+
 
 
 const features = [
@@ -73,7 +73,7 @@ export const AboutUs = () => {
           {/* Image - Left on md+, Full width on mobile */}
           <div className="order-2 md:order-1 animate-slideInLeft flex justify-center md:justify-end">
             <img
-              src={visit}
+              src='/visit.webp'
               alt="Modern gym interior with professional equipment"
               className="
                 w-[100%] 

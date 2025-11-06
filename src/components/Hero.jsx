@@ -2,9 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import gym1 from '../assets/gym1.webp';
-import gym2 from '../assets/gym2.webp';
-import gym3 from '../assets/gym3.webp';
+
 
 export const Hero = () => {
     const settings = {
@@ -34,19 +32,19 @@ export const Hero = () => {
 
     const slides = [
         {
-            img: gym1,
+            img: '/gym1.webp',
             title: "Elite Equipment",
             subtitle: "Epic Results",
             desc: "Experience top-tier fitness gear engineered for peak performance and transformative workouts.",
         },
         {
-            img: gym2,
+            img: '/gym2.webp',
             title: "Expert Guidance",
             subtitle: "Unmatched Success",
             desc: "Our certified trainers deliver personalized coaching to elevate your fitness journey.",
         },
         {
-            img: gym3,
+            img: '/gym3.webp',
             title: "Unite in Fitness",
             subtitle: "Excel as One",
             desc: "Join vibrant group classes that inspire and empower you to achieve greatness.",

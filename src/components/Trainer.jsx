@@ -1,15 +1,11 @@
+
 import React, { useState } from 'react';
 import { Award, Target } from 'lucide-react';
-import trainer1 from '../assets/trainer1.webp';
-import trainer2 from '../assets/trainer2.webp';
-import trainer3 from '../assets/trainer3.webp';
-import trainer4 from '../assets/trainer4.webp';
-import trainer5 from '../assets/trainer5.webp';
-import trainer6 from '../assets/trainer6.webp';
+
 
 const trainers = [
   {
-    img: trainer1,
+    img: '/trainer1.webp',
     name: "Shehryar Ahmed",
     exp: "6 Years",
     role: "Body Composition Specialist",
@@ -17,7 +13,7 @@ const trainers = [
     expertise: ["Strength Training", "Aerobics", "Weight Loss & Weight Gain Training", "CV Training", "CrossFit"]
   },
   {
-    img: trainer2,
+    img: '/trainer2.webp',
     name: "Sheraz",
     exp: "15 Years",
     role: "Motivation & Conditioning Expert",
@@ -25,7 +21,7 @@ const trainers = [
     expertise: ["Strength Training", "Aerobics", "HIIT", "CV Training"]
   },
   {
-    img: trainer3,
+    img: '/trainer3.webp',
     name: "Raheel",
     exp: "12+ Years",
     role: "Science Based Strength Training",
@@ -33,7 +29,7 @@ const trainers = [
     expertise: ["Science Based Strength Training", "Ultimate Performance Workouts", "Functional Training", "CrossFit", "Aerobics"]
   },
   {
-    img: trainer4,
+    img: '/trainer4.webp',
     name: "Noman Yousuf Khan",
     exp: "11 Years",
     role: "Goal Achievement Coach",
@@ -41,7 +37,7 @@ const trainers = [
     expertise: ["Strength Training", "Hypertrophy Training", "HIIT", "Weight Gain & Weight Loss", "Rehab Exercises", "CrossFit"]
   },
   {
-    img: trainer5,
+    img: '/trainer5.webp',
     name: "Asra",
     exp: "2.5 Years",
     role: "Female Fitness Coach",
@@ -50,7 +46,7 @@ const trainers = [
     expertise: ["Strength Training", "Weight Gain", "Weight Loss", "Holistic Training", "Stretching", "Cardio"]
   },
   {
-    img: trainer6,
+    img: '/trainer6.webp',
     name: "Ayesha Rahman",
     exp: "4 Years",
     role: "Women's Wellness Coach",
@@ -103,7 +99,8 @@ export default function Trainer() {
                       <img
                         src={trainer.img}
                         alt={trainer.name}
-                        className="w-full h-[100%] object-contain transition-all duration-500 group-hover:scale-105"
+                        // --- THIS IS THE CORRECTED LINE ---
+                        className="h-full w-auto object-contain transition-all duration-500 group-hover:scale-105"
                         style={{
                           filter: isHovered ? 'brightness(1.1)' : 'brightness(1)',
                           transform: isHovered ? 'translateY(-10px)' : 'translateY(0)',
@@ -152,9 +149,9 @@ export default function Trainer() {
                           )}
                         </div>
                       </div>
-                      <a href="#contact" className='block'>
-                        <button className=" mt-10 w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-                          Book Section
+                      <a href="#contact" className='block mt-auto pt-6'> {/* Use mt-auto to push button to bottom */}
+                        <button className="w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                          Book Session
                         </button>
                       </a>
                     </div>
@@ -186,7 +183,8 @@ export default function Trainer() {
                       <img
                         src={trainer.img}
                         alt={trainer.name}
-                        className="w-full h-[90%] object-contain transition-all duration-500 group-hover:scale-105"
+                        // --- THIS IS THE CORRECTED LINE ---
+                        className="h-full w-auto object-contain transition-all duration-500 group-hover:scale-105"
                         style={{
                           filter: isHovered ? 'brightness(1.1)' : 'brightness(1)',
                           transform: isHovered ? 'translateY(-10px)' : 'translateY(0)',
@@ -250,10 +248,10 @@ export default function Trainer() {
                         </div>
                       </div>
 
-                      {/* CTA Button - Same Blue Gradient */}
-                      <a href="#contact" className="block">
-                        <button className=" mt-10 w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-                          Book Section
+                      {/* CTA Button */}
+                      <a href="#contact" className="block mt-auto pt-6"> {/* Use mt-auto to push button to bottom */}
+                        <button className="w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                          Book Session
                         </button>
                       </a>
                     </div>
