@@ -42,7 +42,7 @@ const trainers = [
   },
   {
     img: trainer5,
-    name: "Neha Khan",
+    name: "Asra",
     exp: "2.5 Years",
     role: "Female Fitness Coach",
     gender: "female",

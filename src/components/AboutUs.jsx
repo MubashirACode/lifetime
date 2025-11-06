@@ -1,5 +1,5 @@
 import React from 'react';
-import visit from "../assets/visit.jpg"
+import visit from "../assets/visit.webp"
 
 
 const features = [
@@ -50,7 +50,7 @@ const features = [
       </svg>
     ),
     title: "Flexible Hours",
-    desc: "Open 7 days a week, early morning to late night"
+    desc: "Open 6 days a week, early morning to late night"
   }
 ];
 

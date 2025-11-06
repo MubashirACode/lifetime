@@ -2,9 +2,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import gym1 from '../assets/gym1.jpg';
-import gym2 from '../assets/gym2.jpg';
-import gym3 from '../assets/gym3.jpg';
+import gym1 from '../assets/gym1.webp';
+import gym2 from '../assets/gym2.webp';
+import gym3 from '../assets/gym3.webp';
 
 export const Hero = () => {
     const settings = {
