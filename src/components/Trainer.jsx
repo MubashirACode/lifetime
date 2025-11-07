@@ -5,14 +5,6 @@ import { Award, Target } from 'lucide-react';
 
 const trainers = [
   {
-    img: '/trainer1.webp',
-    name: "Shehryar Ahmed",
-    exp: "6 Years",
-    role: "Body Composition Specialist",
-    mainConcern: ["Motivational Coaching", "Strength Conditioning", "Body Composition Analysis"],
-    expertise: ["Strength Training", "Aerobics", "Weight Loss & Weight Gain Training", "CV Training", "CrossFit"]
-  },
-  {
     img: '/trainer2.webp',
     name: "Sheraz",
     exp: "15 Years",
@@ -35,6 +27,14 @@ const trainers = [
     role: "Goal Achievement Coach",
     mainConcern: ["Goal Achievements", "Proper Technique", "Motivation", "Nutrition Guidance", "Body Composition"],
     expertise: ["Strength Training", "Hypertrophy Training", "HIIT", "Weight Gain & Weight Loss", "Rehab Exercises", "CrossFit"]
+  },
+  {
+    img: '/trainer1.webp',
+    name: "Shehryar Ahmed",
+    exp: "6 Years",
+    role: "Body Composition Specialist",
+    mainConcern: ["Motivational Coaching", "Strength Conditioning", "Body Composition Analysis"],
+    expertise: ["Strength Training", "Aerobics", "Weight Loss & Weight Gain Training", "CV Training", "CrossFit"]
   },
   {
     img: '/trainer5.png', // ya jo image hai
