@@ -8,6 +8,7 @@ import { Navbar } from './components/Navbar'
 import Pricing from './components/Pricing'
 import Trainer from './components/Trainer'
 import WhatsAppButton from './components/WhatsAppButton'
+import WhyChooseUsSlider from './components/WhyChooseUs'
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Hero />
         <AboutUs />
         <Trainer />
+        <WhyChooseUsSlider />
         <Pricing />
         <ContactUs />
         <Footer />
