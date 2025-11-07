@@ -110,6 +110,7 @@ export const Hero = () => {
                         duration-300 
                         flex 
                         items-center 
+                        cursor-pointer
                         gap-3 
                         group
                       "

@@ -37,22 +37,22 @@ const trainers = [
     expertise: ["Strength Training", "Hypertrophy Training", "HIIT", "Weight Gain & Weight Loss", "Rehab Exercises", "CrossFit"]
   },
   {
-    img: '/trainer5.png',
-    name: "Asra",
+    img: '/trainer5.png', // ya jo image hai
+    name: "Asra Zahir",
+    exp: "10+ Years",
+    role: "Female Fitness Trainer",
+    gender: "female",
+    mainConcern: ["Strength Training", "Fat Loss", "Weight Gain", "One-on-One Training", "Confidence Building"],
+    expertise: ["Strength Training", "Zumba", "Yoga", "Aerobics", "Stretching", "Custom Diet Plans", "Nutrition Guidance"]
+  },
+  {
+    img: '/trainer6.png', // ya jo image hai
+    name: "Neha Khan",
     exp: "2.5 Years",
     role: "Female Fitness Coach",
     gender: "female",
     mainConcern: ["Goal Achievements", "Motivation", "Nutrition Guidance"],
     expertise: ["Strength Training", "Weight Gain", "Weight Loss", "Holistic Training", "Stretching", "Cardio"]
-  },
-  {
-    img: '/trainer6.png',
-    name: "Ayesha Rahman",
-    exp: "4 Years",
-    role: "Women's Wellness Coach",
-    gender: "female",
-    mainConcern: ["Women's Fitness", "Body Toning", "Flexibility Training"],
-    expertise: ["Yoga & Pilates", "Strength Training", "Weight Management", "Prenatal & Postnatal Fitness", "Functional Training"]
   }
 ];
 
@@ -100,7 +100,7 @@ export default function Trainer() {
                         src={trainer.img}
                         alt={trainer.name}
                         // --- THIS IS THE CORRECTED LINE ---
-                        className="h-full w-auto object-contain transition-all duration-500 group-hover:scale-105"
+                        className="h-full w-auto object-cover transition-all duration-500 group-hover:scale-105"
                         style={{
                           filter: isHovered ? 'brightness(1.1)' : 'brightness(1)',
                           transform: isHovered ? 'translateY(-10px)' : 'translateY(0)',
@@ -184,7 +184,7 @@ export default function Trainer() {
                         src={trainer.img}
                         alt={trainer.name}
                         // --- THIS IS THE CORRECTED LINE ---
-                        className="h-full w-auto object-contain transition-all duration-500 group-hover:scale-105"
+                        className=" xl:h-[40vh] md:h-[40vh] sm:h-[40vh]  h-[40vh]    w-auto object-cover transition-all duration-500 group-hover:scale-105"
                         style={{
                           filter: isHovered ? 'brightness(1.1)' : 'brightness(1)',
                           transform: isHovered ? 'translateY(-10px)' : 'translateY(0)',
