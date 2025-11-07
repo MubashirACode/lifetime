@@ -21,7 +21,7 @@ const trainers = [
     expertise: ["Science Based Strength Training", "Ultimate Performance Workouts", "Functional Training", "CrossFit", "Aerobics"]
   },
   {
-    img: '/trainer4.webp',
+    img: '/trainer4.png',
     name: "Noman Yousuf Khan",
     exp: "11 Years",
     role: "Goal Achievement Coach",
