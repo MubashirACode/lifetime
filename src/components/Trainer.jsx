@@ -184,7 +184,7 @@ export default function Trainer() {
                         src={trainer.img}
                         alt={trainer.name}
                         // --- THIS IS THE CORRECTED LINE ---
-                        className=" xl:h-[40vh] md:h-[40vh] sm:h-[40vh]  h-[40vh]    w-auto object-cover transition-all duration-500 group-hover:scale-105"
+                        className=" xl:h-[40vh] md:h-[40vh] lg:h-[33vh] sm:h-[40vh]  h-[40vh]    w-auto object-cover transition-all duration-500 group-hover:scale-105"
                         style={{
                           filter: isHovered ? 'brightness(1.1)' : 'brightness(1)',
                           transform: isHovered ? 'translateY(-10px)' : 'translateY(0)',
