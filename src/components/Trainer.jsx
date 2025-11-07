@@ -37,7 +37,7 @@ const trainers = [
     expertise: ["Strength Training", "Hypertrophy Training", "HIIT", "Weight Gain & Weight Loss", "Rehab Exercises", "CrossFit"]
   },
   {
-    img: '/trainer5.webp',
+    img: '/trainer5.png',
     name: "Asra",
     exp: "2.5 Years",
     role: "Female Fitness Coach",
@@ -46,7 +46,7 @@ const trainers = [
     expertise: ["Strength Training", "Weight Gain", "Weight Loss", "Holistic Training", "Stretching", "Cardio"]
   },
   {
-    img: '/trainer6.webp',
+    img: '/trainer6.png',
     name: "Ayesha Rahman",
     exp: "4 Years",
     role: "Women's Wellness Coach",
