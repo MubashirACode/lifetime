@@ -1,25 +1,24 @@
 // src/components/WhyChooseUsSlider.jsx
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules'; // Navigation removed
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import { X, ChevronLeft, ChevronRight , Search} from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-// 'swiper/css/navigation' removed
 
 const gymSlides = [
-  { img: '/gym1.webp', title: 'Premium Equipment', desc: 'Top-brand machines for all fitness levels' },
-  { img: '/gym2.webp', title: 'Spacious Gym Floor', desc: 'Clean, airy, and fully equipped' },
-  { img: '/gym3.webp', title: 'Group Classes', desc: 'Zumba, Yoga, HIIT every week' },
-  { img: '/gym4.webp', title: 'Locker & Shower', desc: 'Secure storage & hygienic facilities' },
-  { img: '/gym5.webp', title: 'Protein Bar', desc: 'Post-workout shakes & snacks' },
-  { img: '/gym6.webp', title: '24/7 Access', desc: 'Train anytime that suits you' },
-  { img: '/gym7.webp', title: 'Personal Training', desc: 'One-on-one sessions with experts' },
-  { img: '/gym8.webp', title: 'Cardio Zone', desc: 'Treadmills, bikes, and more' },
-  { img: '/gym9.webp', title: 'Strength Area', desc: 'Free weights & power racks' },
-  { img: '/gym10.webp', title: 'Recovery Zone', desc: 'Sauna & massage chairs' },
-  { img: '/gym11.webp', title: 'Kids Play Area', desc: 'Safe space for children' },
-  { img: '/gym12.webp', title: 'Parking Facility', desc: 'Free & secure parking' },
+  '/gym1.webp',
+  '/gym2.webp',
+  '/gym3.webp',
+  '/gym4.webp',
+  '/gym5.webp',
+  '/gym6.webp',
+  '/gym7.webp',
+  '/gym8.webp',
+  '/gym9.webp',
+  '/gym10.webp',
+  '/gym11.webp',
+  '/gym12.webp',
 ];
 
 export default function WhyChooseUsSlider() {
@@ -61,10 +60,10 @@ export default function WhyChooseUsSlider() {
             </p>
           </div>
 
-          {/* Main Slider - NO ARROWS */}
+          {/* Main Slider - Only Images */}
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <Swiper
-              modules={[Autoplay, Pagination]} // Navigation removed
+              modules={[Autoplay, Pagination]}
               spaceBetween={20}
               slidesPerView={1}
               breakpoints={{
@@ -75,34 +74,24 @@ export default function WhyChooseUsSlider() {
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop={true}
               pagination={{ clickable: true }}
-              // navigation={true} → REMOVED
               className="why-choose-slider"
             >
-              {gymSlides.map((slide, index) => (
+              {gymSlides.map((img, index) => (
                 <SwiperSlide key={index}>
                   <div
                     className="group relative overflow-hidden rounded-xl h-64 bg-gray-200 cursor-pointer"
                     onClick={() => openLightbox(index)}
                   >
                     <img
-                      src={slide.img}
-                      alt={slide.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      src={img}
+                      alt={`Gym facility ${index + 1}`}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" // Faster duration
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                      <h3 className="font-bold text-lg">{slide.title}</h3>
-                      <p className="text-xs mt-1 opacity-0 group-hover:opacity-100 transition-opacity delay-100">
-                        {slide.desc}
-                      </p>
-                    </div>
-                    {/* Click Indicator */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                      <div className="bg-white/20 backdrop-blur-sm rounded-full p-3">
-                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
+                    {/* Hover Zoom Indicator - No Blur */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/20 will-change-opacity">
+                      <div className="bg-white/30 rounded-full p-3">
+                        <Search className="w-8 h-8 text-white" strokeWidth={2} />
                       </div>
                     </div>
                   </div>
@@ -114,9 +103,9 @@ export default function WhyChooseUsSlider() {
         </div>
       </section>
 
-      {/* LIGHTBOX POPUP - WITH ARROWS */}
+      {/* LIGHTBOX POPUP - Only Image */}
       {lightboxOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95">
           {/* Close Button */}
           <button
             onClick={closeLightbox}
@@ -141,18 +130,13 @@ export default function WhyChooseUsSlider() {
             <ChevronRight className="w-12 h-12" />
           </button>
 
-          {/* Large Image */}
-          <div className="relative max-w-5xl w-full h-full flex items-center justify-center">
+          {/* Fullscreen Image */}
+          <div className="relative max-w-6xl w-full h-full flex items-center justify-center">
             <img
-              src={gymSlides[currentIndex].img}
-              alt={gymSlides[currentIndex].title}
+              src={gymSlides[currentIndex]}
+              alt={`Gym facility ${currentIndex + 1}`}
               className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
             />
-            {/* Caption */}
-            <div className="absolute bottom-6 left-6 right-6 bg-black/60 backdrop-blur-sm text-white p-4 rounded-lg">
-              <h3 className="text-2xl font-bold">{gymSlides[currentIndex].title}</h3>
-              <p className="text-sm mt-1">{gymSlides[currentIndex].desc}</p>
-            </div>
           </div>
         </div>
       )}
