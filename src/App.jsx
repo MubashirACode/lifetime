@@ -21,8 +21,8 @@ function App() {
         <Navbar />
         <Hero />
         <AboutUs />
-        <Trainer />
         <WhyChooseUsSlider />
+        <Trainer />
         <Pricing />
         <ContactUs />
         <Footer />
