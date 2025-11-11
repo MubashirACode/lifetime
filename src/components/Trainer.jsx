@@ -58,6 +58,7 @@ const trainers = [
 
 export default function Trainer() {
   const [hovered, setHovered] = useState(null);
+  const phoneNumber = "923040240020";
 
   const maleTrainers = trainers.filter(t => !t.gender || t.gender !== 'female');
   const femaleTrainers = trainers.filter(t => t.gender === 'female');
@@ -149,9 +150,15 @@ export default function Trainer() {
                           )}
                         </div>
                       </div>
-                      <a href="#contact" className='block mt-auto pt-6'> {/* Use mt-auto to push button to bottom */}
-                        <button className="w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-                          Book Session
+                      <a
+                        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-auto py-6"
+
+                      > {/* Use mt-auto to push button to bottom */}
+                        <button className=" cursor-pointer w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                          Book Session on WhatsApp
                         </button>
                       </a>
                     </div>
@@ -249,9 +256,15 @@ export default function Trainer() {
                       </div>
 
                       {/* CTA Button */}
-                      <a href="#contact" className="block mt-auto pt-6"> {/* Use mt-auto to push button to bottom */}
-                        <button className="w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-                          Book Session
+                      <a
+                        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-auto py-6"
+
+                      > {/* Use mt-auto to push button to bottom */}
+                        <button className="w-full cursor-pointer bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                        Book Session on WhatsApp
                         </button>
                       </a>
                     </div>

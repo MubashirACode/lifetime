@@ -5,6 +5,10 @@ import React from 'react';
 import { Check, Star, Zap, Award } from 'lucide-react';
 
 export default function Pricing() {
+
+
+  const phoneNumber = "923040240020";
+
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -35,7 +39,7 @@ export default function Pricing() {
                 <h3 className="text-2xl font-bold text-gray-900">Silver Package</h3>
               </div>
             </div>
-            
+
             <div className="mb-6 pb-6 border-b border-gray-200">
               <p className="text-sm text-gray-500 font-medium mb-2">Registration Fee</p>
               <div className="flex items-baseline gap-2">
@@ -63,10 +67,17 @@ export default function Pricing() {
               <p className="text-sm text-gray-500 font-medium mb-1">Monthly Investment</p>
               <p className="text-3xl font-black text-[#2776d3]">Rs 4,500</p>
             </div>
+            <a
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto py-6"
 
-            <button className="w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-              Join Silver Plan
-            </button>
+            >
+              <button className="w-full cursor-pointer bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                Join Silver Plan
+              </button>
+            </a>
           </div>
 
           {/* Gold Package - Featured */}
@@ -78,7 +89,7 @@ export default function Pricing() {
                   Most Popular
                 </span>
               </div>
-              
+
               <div className="flex items-center justify-between mb-6 mt-4">
                 <div className="flex items-center gap-3">
                   <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl">
@@ -119,10 +130,17 @@ export default function Pricing() {
                 <p className="text-sm text-white/80 font-medium mb-1">Monthly Investment</p>
                 <p className="text-3xl font-black text-yellow-400">Rs 7,000</p>
               </div>
+              <a
+                href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto py-6"
 
-              <button className="w-full bg-white text-[#2776d3] hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-                Join Gold Plan
-              </button>
+              >
+                <button className=" cursor-pointer w-full bg-white text-[#2776d3] hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                  Join Gold Plan
+                </button>
+              </a>
             </div>
           </div>
 
@@ -158,10 +176,17 @@ export default function Pricing() {
                 </div>
               </li>
             </ul>
+            <a
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto py-6"
 
-            <button className="w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-              Choose Your Package
-            </button>
+            >
+              <button className="w-full cursor-pointer bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                Choose Your Package
+              </button>
+            </a>
           </div>
         </div>
 
@@ -174,9 +199,17 @@ export default function Pricing() {
             </div>
             <h3 className="text-2xl text-black font-bold mb-3">Personal Training</h3>
             <p className="text-black font-medium mb-6 text-sm">Get one-on-one guidance from certified trainers</p>
-            <button className="w-full bg-[#2776d3] hover:bg-yellow-400 text-white hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-              Contact Now
-            </button>
+            <a
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto py-6"
+
+            >
+              <button className="  cursor-pointer w-full bg-[#2776d3] hover:bg-yellow-400 text-white hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                Contact Now
+              </button>
+            </a>
           </div>
 
           {/* One Day Pass */}
@@ -199,9 +232,20 @@ export default function Pricing() {
                 <span className="font-black text-yellow-400 text-lg">Rs 1,000</span>
               </li>
             </ul>
-            <button className="w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-              Get Pass Now
-            </button>
+
+            <a
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto py-6"
+
+            >
+
+              <button className=" cursor-pointer w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                Get Pass Now
+              </button>
+            </a>
+
           </div>
 
           {/* Diet Plan */}
@@ -215,9 +259,19 @@ export default function Pricing() {
               <p className="text-white/80 text-sm">One-time fee</p>
             </div>
             <p className="text-white/90 mb-6 text-sm">Personalized nutrition plan by expert nutritionists</p>
-            <button className="w-full bg-white hover:bg-yellow-400 text-[#2776d3] hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-              Order Your Plan
-            </button>
+
+            <a
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto py-6"
+
+            >
+
+              <button className=" cursor-pointer  w-full bg-white hover:bg-yellow-400 text-[#2776d3] hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                Order Your Plan
+              </button>
+            </a>
           </div>
         </div>
 
@@ -226,9 +280,21 @@ export default function Pricing() {
           <p className="text-gray-600 text-lg mb-4">
             Still have questions? We're here to help!
           </p>
-          <button className="bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-xl">
-            Contact Support Team
-          </button>
+
+          <a
+            href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-auto py-6"
+
+          >
+
+
+
+            <button className="bg-[#2776d3] cursor-pointer text-white hover:bg-yellow-400 hover:text-gray-900 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-xl">
+              Contact Support Team
+            </button>
+          </a>
         </div>
       </div>
     </section>
