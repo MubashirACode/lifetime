@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 
 export const Hero = () => {
+    const phoneNumber = "923040240020";
     const settings = {
         dots: true,
         infinite: true,
@@ -88,7 +89,13 @@ export const Hero = () => {
                                     </p>
 
                                     {/* CTA Button */}
-                                    <a href="#contact" className="block">
+                                    <a
+                                        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-auto py-6"
+
+                                    >
                                         <button
                                             className="
                         bg-[#fec200] 

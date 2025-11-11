@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const phoneNumber = "923040240020";
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -20,8 +20,8 @@ export const Navbar = () => {
         px-4 md:px-16 lg:px-24 xl:px-32 
         flex items-center justify-between 
         transition-all duration-500
-        ${scrolled 
-          ? 'bg-white/75 backdrop-blur-xl shadow-xl border-b border-white/20' 
+        ${scrolled
+          ? 'bg-white/75 backdrop-blur-xl shadow-xl border-b border-white/20'
           : 'bg-white/65 backdrop-blur-2xl'
         }
         before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/50 before:to-transparent before:pointer-events-none
@@ -61,8 +61,14 @@ export const Navbar = () => {
       </ul>
 
       {/* Join Button */}
-      <a href="#contact" className="relative z-10">
-        <button className="hidden md:inline bg-gradient-to-r from-[#2776d3] to-[#1e5cb3] hover:from-[#1e5cb3] hover:to-[#2776d3] text-white font-bold text-sm px-6 py-2.5 rounded-lg active:scale-95 transition-all shadow-lg hover:shadow-xl border border-white/30">
+      <a
+        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative "
+
+      >
+        <button className="hidden md:inline cursor-pointer w-full bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 transition-all font-bold text-sm px-6 py-2.5 rounded-lg active:scale-95 hover:scale-105 shadow-lg hover:shadow-xl border border-white/30">
           Join Now
         </button>
       </a>
@@ -97,9 +103,24 @@ export const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button className="mt-4 w-full bg-gradient-to-r from-[#2776d3] to-[#1e5cb3] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 border border-white/30">
-          Contact Now
-        </button>
+
+
+        <a
+          href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative "
+
+        >
+
+
+          <button className="mt-4 w-full bg-gradient-to-r from-[#2776d3] to-[#1e5cb3] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 border border-white/30">
+            Contact Now
+          </button>
+
+
+        </a>
+
       </div>
     </nav>
   );
