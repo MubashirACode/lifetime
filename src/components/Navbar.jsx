@@ -24,7 +24,7 @@ export const Navbar = () => {
         transition-all duration-500
         ${scrolled
           ? 'bg-white/75 backdrop-blur-xl shadow-xl border-b border-white/20'
-          : 'bg-white/65 backdrop-blur-2xl'
+          : 'bg-white backdrop-blur-2xl'
         }
         before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/50 before:to-transparent before:pointer-events-none
       `}

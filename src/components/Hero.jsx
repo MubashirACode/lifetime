@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export const Hero = () => {
     const phoneNumber = "923040240020";
-    const message = "Hello! I'd like to inquire about gym membership.";
+     const message = "Hello! I'd like to inquire about gym membership.";
 
     const settings = {
         dots: true,
@@ -21,14 +21,7 @@ export const Hero = () => {
         fade: true,
         arrows: false,
         dotsClass: 'slick-dots custom-dots',
-        appendDots: (dots) => (
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-                <ul className="flex gap-3"> {dots} </ul>
-            </div>
-        ),
-        customPaging: () => (
-            <div className="w-3 h-3 rounded-full bg-white/50 hover:bg-[#fec200] transition-all duration-300"></div>
-        ),
+        
     };
 
     const fallbackImage = 'https://via.placeholder.com/1920x1080?text=Gym+Image+Not+Found';
@@ -55,7 +48,7 @@ export const Hero = () => {
     ];
 
     return (
-        <section id="home" className="relative w-full h-[90vh] overflow-hidden">
+        <section id="home" className="relative w-full h-[90vh] mb-10 ">
             <Slider {...settings}>
                 {slides.map((slide, index) => (
                     <div key={index} className="relative w-full h-screen">

@@ -56,10 +56,10 @@ const features = [
 
 export const AboutUs = () => {
   return (
-    <section id="about" className="py-16 md:py-24 bg-gray-50">
+    <section id="about" className="py-16 md:py-24  bg-gray-50">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         {/* Heading */}
-        <div className="text-center mb-12 md:mb-16 animate-fadeIn">
+        <div className="text-center mt-14 mb-12 md:mb-16 animate-fadeIn">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4">
             Welcome to <span className="text-[#2776d3]">Lifetime Fitness</span>
           </h2>
