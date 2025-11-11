@@ -59,6 +59,8 @@ const trainers = [
 export default function Trainer() {
   const [hovered, setHovered] = useState(null);
   const phoneNumber = "923040240020";
+  const message = "Hello! I'd like to inquire about gym membership.";
+
 
   const maleTrainers = trainers.filter(t => !t.gender || t.gender !== 'female');
   const femaleTrainers = trainers.filter(t => t.gender === 'female');
@@ -151,7 +153,7 @@ export default function Trainer() {
                         </div>
                       </div>
                       <a
-                        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+                        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-auto py-6"
@@ -257,14 +259,14 @@ export default function Trainer() {
 
                       {/* CTA Button */}
                       <a
-                        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+                        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-auto py-6"
 
                       > {/* Use mt-auto to push button to bottom */}
                         <button className="w-full cursor-pointer bg-[#2776d3] text-white hover:bg-yellow-400 hover:text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-                        Book Session on WhatsApp
+                          Book Session on WhatsApp
                         </button>
                       </a>
                     </div>

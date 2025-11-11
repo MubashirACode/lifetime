@@ -5,6 +5,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const phoneNumber = "923040240020";
+   const message = "Hello! I'd like to inquire about gym membership.";
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -62,7 +64,7 @@ export const Navbar = () => {
 
       {/* Join Button */}
       <a
-        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
         target="_blank"
         rel="noopener noreferrer"
         className="relative "
@@ -106,7 +108,7 @@ export const Navbar = () => {
 
 
         <a
-          href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+          href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="relative "

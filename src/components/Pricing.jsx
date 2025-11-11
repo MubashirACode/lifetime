@@ -8,6 +8,7 @@ export default function Pricing() {
 
 
   const phoneNumber = "923040240020";
+ const message = "Hello! I'd like to inquire about gym membership.";
 
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -68,7 +69,7 @@ export default function Pricing() {
               <p className="text-3xl font-black text-[#2776d3]">Rs 4,500</p>
             </div>
             <a
-              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-auto py-6"
@@ -131,7 +132,7 @@ export default function Pricing() {
                 <p className="text-3xl font-black text-yellow-400">Rs 7,000</p>
               </div>
               <a
-                href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+                href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-auto py-6"
@@ -177,7 +178,7 @@ export default function Pricing() {
               </li>
             </ul>
             <a
-              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-auto py-6"
@@ -200,7 +201,7 @@ export default function Pricing() {
             <h3 className="text-2xl text-black font-bold mb-3">Personal Training</h3>
             <p className="text-black font-medium mb-6 text-sm">Get one-on-one guidance from certified trainers</p>
             <a
-              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-auto py-6"
@@ -234,7 +235,7 @@ export default function Pricing() {
             </ul>
 
             <a
-              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-auto py-6"
@@ -261,7 +262,7 @@ export default function Pricing() {
             <p className="text-white/90 mb-6 text-sm">Personalized nutrition plan by expert nutritionists</p>
 
             <a
-              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-auto py-6"
@@ -282,7 +283,7 @@ export default function Pricing() {
           </p>
 
           <a
-            href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent()}`}
+            href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-auto py-6"
