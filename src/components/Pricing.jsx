@@ -42,10 +42,10 @@ export default function Pricing() {
             </div>
 
             <div className="mb-6 pb-6 border-b border-gray-200">
-              <p className="text-sm text-gray-500 font-medium mb-2">Registration Fee</p>
+              <p className="text-sm text-gray-500 font-medium mb-2">Registration Fee + Monthly Investment</p>
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl font-black text-[#2776d3]">Rs 4,000</span>
-                <span className="text-gray-400 line-through text-lg">Rs 5,000</span>
+                <span className="text-4xl font-black text-[#2776d3]">Rs 4,500</span>
+               
               </div>
             </div>
 
@@ -64,10 +64,7 @@ export default function Pricing() {
               </li>
             </ul>
 
-            <div className="mb-6 bg-gradient-to-r from-gray-50 to-white p-4 rounded-xl border border-gray-200">
-              <p className="text-sm text-gray-500 font-medium mb-1">Monthly Investment</p>
-              <p className="text-3xl font-black text-[#2776d3]">Rs 4,500</p>
-            </div>
+            
             <a
               href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
               target="_blank"
@@ -101,10 +98,10 @@ export default function Pricing() {
               </div>
 
               <div className="mb-6 pb-6 border-b border-white/20">
-                <p className="text-sm text-white/80 font-medium mb-2">Registration Fee</p>
+                <p className="text-sm text-white/80 font-medium mb-2">Registration Fee + Monthly Investment</p>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-4xl font-black text-yellow-400">Rs 4,000</span>
-                  <span className="text-white/60 line-through text-lg">Rs 6,000</span>
+                  <span className="text-4xl font-black text-yellow-400">Rs 7,000</span>
+               
                 </div>
               </div>
 
@@ -127,10 +124,7 @@ export default function Pricing() {
                 </li>
               </ul>
 
-              <div className="mb-6 bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                <p className="text-sm text-white/80 font-medium mb-1">Monthly Investment</p>
-                <p className="text-3xl font-black text-yellow-400">Rs 7,000</p>
-              </div>
+             
               <a
                 href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
                 target="_blank"

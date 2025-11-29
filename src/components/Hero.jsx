@@ -28,7 +28,7 @@ export const Hero = () => {
 
     const slides = [
         {
-            img: '/gym1.webp',
+            img: '/gym4.webp',
             title: "Elite Equipment",
             subtitle: "Epic Results",
             desc: "Experience top-tier fitness gear engineered for peak performance and transformative workouts.",
