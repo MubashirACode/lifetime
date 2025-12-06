@@ -42,7 +42,7 @@ export default function Pricing() {
             </div>
 
             <div className="mb-6 pb-6 border-b border-gray-200">
-              <p className="text-sm text-gray-500 font-medium mb-2">Registration Fee + Monthly Investment</p>
+              <p className="text-sm text-gray-500 font-medium mb-2">  Monthly Investment</p>
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl font-black text-[#2776d3]">Rs 4,500</span>
                
@@ -50,6 +50,7 @@ export default function Pricing() {
             </div>
 
             <ul className="space-y-4 mb-8">
+              
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[#2776d3] mt-0.5 flex-shrink-0" />
                 <span className="text-gray-700 font-medium">Full Access to Gym Equipment</span>
@@ -98,7 +99,7 @@ export default function Pricing() {
               </div>
 
               <div className="mb-6 pb-6 border-b border-white/20">
-                <p className="text-sm text-white/80 font-medium mb-2">Registration Fee + Monthly Investment</p>
+                <p className="text-sm text-white/80 font-medium mb-2">  Monthly Investment</p>
                 <div className="flex items-baseline gap-2">
                   <span className="text-4xl font-black text-yellow-400">Rs 7,000</span>
                
@@ -106,6 +107,7 @@ export default function Pricing() {
               </div>
 
               <ul className="space-y-4 mb-8">
+               
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" />
                   <span className="font-medium">Full Access to Gym Equipment</span>
