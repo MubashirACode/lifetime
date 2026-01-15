@@ -152,7 +152,7 @@ export const Footer = () => {
                                     </div>
                                     <div className="text-white/90">
                                         <p className="font-semibold mb-1 text-yellow-300">Girls Timings:</p>
-                                        <p className="leading-tight">Morning: <strong>10.00 AM - 10.00 PM</strong></p>
+                                        <p className="leading-tight">Morning: <strong>12 PM - 3 PM</strong></p>
 
                                     </div>
                                 </div>
