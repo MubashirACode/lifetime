@@ -44,7 +44,7 @@ export default function Pricing() {
             <div className="mb-6 pb-6 border-b border-gray-200">
               <p className="text-sm text-gray-500 font-medium mb-2">  Monthly Investment</p>
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl font-black text-[#2776d3]">Rs 5000</span>
+                <span className="text-4xl font-black text-[#2776d3]">Rs 5,000</span>
                
               </div>
             </div>
