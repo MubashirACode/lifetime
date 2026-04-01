@@ -44,7 +44,7 @@ export default function Pricing() {
             <div className="mb-6 pb-6 border-b border-gray-200">
               <p className="text-sm text-gray-500 font-medium mb-2">  Monthly Investment</p>
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl font-black text-[#2776d3]">Rs 4,500</span>
+                <span className="text-4xl font-black text-[#2776d3]">Rs 5000</span>
                
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function Pricing() {
               <div className="mb-6 pb-6 border-b border-white/20">
                 <p className="text-sm text-white/80 font-medium mb-2">  Monthly Investment</p>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-4xl font-black text-yellow-400">Rs 7,000</span>
+                  <span className="text-4xl font-black text-yellow-400">Rs 8,000</span>
                
                 </div>
               </div>
